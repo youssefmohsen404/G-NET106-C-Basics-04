@@ -40,14 +40,25 @@ namespace G_NET106_C_Basics_04
             //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable 
             //int pages = 400; and print pages afterward. What do you expect to see, and why?
 
-          /*  int pages = 400;
-            AddBounsPages(pages);
-            Console.WriteLine(pages);*/
+            /*  int pages = 400;
+              AddBounsPages(pages);
+              Console.WriteLine(pages);*/
 
             //pages value  won't change cause thhe parameters are passing by value with a value type so it takes a copy from the variable
             // so pages will stay equals 400
             #endregion
-
+            #region Question 6
+            //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it 
+            //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
+           
+            
+            /*double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
+            Console.WriteLine("prices outside = "+prices[0]);
+*/
+            //prices gonna be 20.5 cause the parameters are passing by value on a reference type so it's gonna change inside and outside the function 
+            
+            #endregion
         }
         /*  static void PrintWelcomeMessage()
           {
@@ -56,8 +67,14 @@ namespace G_NET106_C_Basics_04
         /*  static void PrintBookTitle(string title) {
               Console.WriteLine("Book title:"+ title);
           }*/
-      /*  static void AddBounsPages(int pages) {
-            pages += 50;
+        /*  static void AddBounsPages(int pages) {
+              pages += 50;
+          }*/
+        /*static void ApplyDiscount(double[] prices) {
+            prices[0] -= 5;
+            Console.WriteLine("prices inside the function ="+ prices[0]);
+             
+            
         }*/
     }
 }
