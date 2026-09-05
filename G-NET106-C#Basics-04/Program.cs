@@ -50,14 +50,25 @@ namespace G_NET106_C_Basics_04
             #region Question 6
             //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it 
             //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
-           
-            
+
+
             /*double[] prices = { 25.5, 40.0 };
             ApplyDiscount(prices);
             Console.WriteLine("prices outside = "+prices[0]);
 */
             //prices gonna be 20.5 cause the parameters are passing by value on a reference type so it's gonna change inside and outside the function 
+
+            #endregion
+            #region Question 7 
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. 
+            //Call it and print pages afterward. How is the result different from question 5 ?
+
+          /*  int pages = 400;
+            AddBounsPages(ref pages);
+            Console.WriteLine("pages outside the function ="+pages);*/
             
+            //it changes in the value inside and outside the function cause the parameters are passing by reference on a value type
+            // so it takes the original value not a copy as passing parameters by value
             #endregion
         }
         /*  static void PrintWelcomeMessage()
@@ -75,6 +86,11 @@ namespace G_NET106_C_Basics_04
             Console.WriteLine("prices inside the function ="+ prices[0]);
              
             
+        }*/
+       /* static void AddBounsPages(ref int pages)
+        {
+            pages += 50;
+            Console.WriteLine("pages inside the function = " + pages);
         }*/
     }
 }
