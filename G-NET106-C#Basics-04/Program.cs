@@ -36,14 +36,28 @@ namespace G_NET106_C_Basics_04
 
             //PrintBookTitle("First page");
             #endregion
+            #region Question 5
+            //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable 
+            //int pages = 400; and print pages afterward. What do you expect to see, and why?
+
+          /*  int pages = 400;
+            AddBounsPages(pages);
+            Console.WriteLine(pages);*/
+
+            //pages value  won't change cause thhe parameters are passing by value with a value type so it takes a copy from the variable
+            // so pages will stay equals 400
+            #endregion
 
         }
         /*  static void PrintWelcomeMessage()
           {
               Console.WriteLine("Welcome to the Library!");
           }*/
-      /*  static void PrintBookTitle(string title) {
-            Console.WriteLine("Book title:"+ title);
+        /*  static void PrintBookTitle(string title) {
+              Console.WriteLine("Book title:"+ title);
+          }*/
+      /*  static void AddBounsPages(int pages) {
+            pages += 50;
         }*/
     }
 }
