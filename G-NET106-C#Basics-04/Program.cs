@@ -1,4 +1,6 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace G_NET106_C_Basics_04
 {
@@ -63,12 +65,21 @@ namespace G_NET106_C_Basics_04
             //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. 
             //Call it and print pages afterward. How is the result different from question 5 ?
 
-          /*  int pages = 400;
-            AddBounsPages(ref pages);
-            Console.WriteLine("pages outside the function ="+pages);*/
-            
+            /*  int pages = 400;
+              AddBounsPages(ref pages);
+              Console.WriteLine("pages outside the function ="+pages);*/
+
             //it changes in the value inside and outside the function cause the parameters are passing by reference on a value type
             // so it takes the original value not a copy as passing parameters by value
+            #endregion
+            #region Question 8
+            //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a 
+            //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length afterward.
+
+            /*double[] prices = { 25.5, 40.0 };
+            ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);*/
+
             #endregion
         }
         /*  static void PrintWelcomeMessage()
@@ -91,6 +102,10 @@ namespace G_NET106_C_Basics_04
         {
             pages += 50;
             Console.WriteLine("pages inside the function = " + pages);
+        }*/
+       /*static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
         }*/
     }
 }
