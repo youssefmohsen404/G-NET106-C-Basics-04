@@ -102,8 +102,14 @@ namespace G_NET106_C_Basics_04
             #region Question 11
             //Using the PrintBookInfo method from the question above, call it by naming the 
             //parameters, passing pages before title. 
-           
+
             /*PrintBookInfo(pages: 400, title: "action");*/
+            #endregion
+            #region Question12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. 
+            //Call it with three book titles.
+
+            /*PrintAllTitles("action" , "comedy" , "drama");*/
             #endregion
         }
         /*  static void PrintWelcomeMessage()
@@ -146,6 +152,14 @@ namespace G_NET106_C_Basics_04
         /*static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine(title + pages);
+        }*/
+      /*  static void PrintAllTitles(params  string[] titles)
+        {
+            foreach(string title in titles)
+            {
+                Console.WriteLine(title);
+            }
+
         }*/
     }
 }
