@@ -81,6 +81,15 @@ namespace G_NET106_C_Basics_04
             Console.WriteLine(prices.Length);*/
 
             #endregion
+            #region Question 9 
+            //Write a method bool TryGetPrice(string title, out double price) that returns true and sets 
+            //price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it 1 and print the price if found
+            
+            
+            /*string title = "Clean Code";
+            Console.WriteLine(TryGetPrice(title, out double price));*/
+            
+            #endregion
         }
         /*  static void PrintWelcomeMessage()
           {
@@ -106,6 +115,18 @@ namespace G_NET106_C_Basics_04
        /*static void ReplaceArray(ref double[] prices)
         {
             prices = new double[] { 10.0, 12.5, 15.0 };
+        }*/
+     /*  static bool TryGetPrice(string title , out double price)
+        {
+            if(title == "Clean Code")
+            {
+                price = 25;
+                Console.WriteLine(price);
+                return true;
+            }
+            price = 0;
+            Console.WriteLine(price);
+            return false;
         }*/
     }
 }
