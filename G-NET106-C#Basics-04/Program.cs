@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Reflection;
 using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -93,10 +94,16 @@ namespace G_NET106_C_Basics_04
             #region Question 10
             //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call 
             //it once with only a title, and once passing both a title and pages.
-            
+
             /*PrintBookInfo(title: "action");
             PrintBookInfo(title: "action", pages:400);*/
 
+            #endregion
+            #region Question 11
+            //Using the PrintBookInfo method from the question above, call it by naming the 
+            //parameters, passing pages before title. 
+           
+            /*PrintBookInfo(pages: 400, title: "action");*/
             #endregion
         }
         /*  static void PrintWelcomeMessage()
@@ -115,28 +122,28 @@ namespace G_NET106_C_Basics_04
              
             
         }*/
-       /* static void AddBounsPages(ref int pages)
-        {
-            pages += 50;
-            Console.WriteLine("pages inside the function = " + pages);
-        }*/
-       /*static void ReplaceArray(ref double[] prices)
-        {
-            prices = new double[] { 10.0, 12.5, 15.0 };
-        }*/
-     /*  static bool TryGetPrice(string title , out double price)
-        {
-            if(title == "Clean Code")
-            {
-                price = 25;
-                Console.WriteLine(price);
-                return true;
-            }
-            price = 0;
-            Console.WriteLine(price);
-            return false;
-        }*/
-    /* static void PrintBookInfo(string title , int pages =300)
+        /* static void AddBounsPages(ref int pages)
+         {
+             pages += 50;
+             Console.WriteLine("pages inside the function = " + pages);
+         }*/
+        /*static void ReplaceArray(ref double[] prices)
+         {
+             prices = new double[] { 10.0, 12.5, 15.0 };
+         }*/
+        /*  static bool TryGetPrice(string title , out double price)
+           {
+               if(title == "Clean Code")
+               {
+                   price = 25;
+                   Console.WriteLine(price);
+                   return true;
+               }
+               price = 0;
+               Console.WriteLine(price);
+               return false;
+           }*/
+        /*static void PrintBookInfo(string title, int pages = 300)
         {
             Console.WriteLine(title + pages);
         }*/
